@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Efemérides Naturales de Venezuela</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-f8fafc bg-grid-pattern min-h-screen text-slate-800 font-sans relative overflow-x-hidden flex flex-col justify-between">
+
+   
+    <div id="intro-overlay" class="fixed inset-0 bg-f8fafc bg-grid-pattern z-50 flex items-center justify-center p-4 sm:p-8 transition-opacity duration-1000">
+        
+        <div class="absolute top-10 left-10 pointer-events-none opacity-25 hidden sm:block animate-float">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.2">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+        </div>
+        <div class="absolute bottom-10 right-10 pointer-events-none opacity-25 hidden sm:block animate-float-reverse">
+            <svg width="140" height="140" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="1.2">
+                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"/>
+                <path d="M12 6v6l4 2"/>
+            </svg>
+        </div>
+
+       
+        <div id="step-1" class="slide-step slide-from-top text-center max-w-4xl px-4">
+            <div class="ambient-glow absolute inset-0 -z-10 rounded-full"></div>
+            <span class="inline-flex items-center gap-2 glass-badge text-emerald-900 font-bold text-xs sm:text-sm px-5 py-2 rounded-full mb-8 tracking-widest uppercase shadow-sm">
+                🌱 República Bolivariana de Venezuela
+            </span>
+            <h1 class="font-anton text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-emerald-950 tracking-wider uppercase leading-none drop-shadow-md">
+                Las Efemérides <br/>
+                <span class="text-emerald-600 drop-shadow-sm">Naturales</span> <br/>
+                de Venezuela
+            </h1>
+        </div>
+
+
+        <div id="step-2" class="slide-step text-center">
+            <div class="ambient-glow absolute inset-0 -z-10 rounded-full"></div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800/60 mb-4 block">
+                Integrantes del Equipo
+            </span>
+            <div class="h-28 flex items-center justify-center px-4">
+                <h2 id="author-name" class="font-anton text-4xl sm:text-6xl md:text-7xl text-emerald-900 tracking-wide transition-all duration-700 opacity-0 transform translate-y-4">
+                    by Luizabeth Contreras
+                </h2>
+            </div>
+            <div class="flex gap-2 mt-6" id="author-progress-dots">
+                <span class="w-3 h-3 rounded-full bg-emerald-600 transition-all duration-300"></span>
+                <span class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-300"></span>
+                <span class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-300"></span>
+                <span class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-300"></span>
+            </div>
+        </div>
+
+        
+        <div id="step-3" class="slide-step text-center w-full max-w-3xl px-4">
+            <div class="bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 border-2 border-emerald-500/80 shadow-2xl relative overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-8 text-center md:text-left space-y-4">
+                        <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-900 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase border border-amber-200/80 shadow-sm">
+                            🏆 Evaluación Escolar
+                        </div>
+                        <h2 class="font-anton text-3xl sm:text-5xl text-emerald-950 tracking-wider uppercase leading-tight">
+                            Presentación de GHC <br/>
+                            <span class="text-amber-600">Evaluación Número 1</span>
+                        </h2>
+                        <div class="pt-1 flex flex-wrap items-center justify-center md:justify-start gap-3">
+                            <span class="bg-emerald-700 text-white font-bold text-base sm:text-xl px-5 py-2 rounded-xl shadow-md inline-block">
+                                4to Año "B"
+                            </span>
+                            <span class="text-xs text-slate-500 font-bold uppercase tracking-wider bg-slate-100 px-3 py-2 rounded-xl">
+                                🌱 Bio-Diversidad Venezolana
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-4 flex md:flex-col items-center justify-center gap-3 bg-emerald-50/70 p-4 sm:p-5 rounded-2xl border border-emerald-100 relative">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shadow-md animate-float text-xl font-bold">
+                                🌳
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center shadow-md animate-float-reverse text-xl font-bold">
+                                🐦
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-teal-600 text-white flex items-center justify-center shadow-md animate-float-reverse text-xl font-bold">
+                                ⛰️
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-md animate-float text-xl font-bold">
+                                🌎
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-800 mt-1 block">
+                            Efemérides Patrias
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="endIntro()" class="absolute bottom-6 right-6 text-xs text-slate-500 hover:text-slate-800 font-semibold uppercase tracking-wider bg-white/90 backdrop-blur border border-slate-200 px-4 py-2 rounded-xl transition shadow-sm hover:shadow">
+            Saltar Intro ➔
+        </button>
+    </div>
+
+
+   
+    <main id="main-content" class="opacity-0 transition-opacity duration-1000 w-full max-w-7xl mx-auto px-4 sm:px-8 pt-8 pb-4 flex-grow">
+
+      
+        <header class="text-center mb-12 relative">
+            <div class="ambient-glow absolute left-1/2 -top-10 -translate-x-1/2 w-96 h-96 -z-10 rounded-full"></div>
+            
+            <span class="inline-flex items-center gap-2 bg-emerald-100/80 text-emerald-800 font-bold text-xs sm:text-sm px-5 py-2 rounded-full border border-emerald-300 mb-6 tracking-widest uppercase shadow-sm">
+                🧭 Geografía, Historia y Ciudadanía
+            </span>
+            <h1 class="font-anton text-6xl sm:text-8xl md:text-9xl text-emerald-950 tracking-wider uppercase leading-none drop-shadow-sm">
+                EFEMÉRIDES NATURALES <br/>
+                <span class="text-emerald-600">DE VENEZUELA</span>
+            </h1>
+            <p class="mt-6 text-slate-600 font-semibold text-lg sm:text-2xl max-w-3xl mx-auto">
+                Mapa mental, conceptos e integración ecológica de la nación
+            </p>
+        </header>
+
+      
+        <section class="mb-16">
+            <div class="text-center mb-8">
+                <h2 class="font-anton text-3xl sm:text-5xl text-slate-900 tracking-wide uppercase">
+                    1. Bases Conceptuales y Características
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wider mt-1">
+                    Definición, Tipos y Características fundamentales de la naturaleza
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white/80 backdrop-blur border-2 border-emerald-200/80 rounded-3xl p-6 shadow-lg hover:shadow-xl transition hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-4 shadow-md text-xl">
+                        📖
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">
+                        Concepto Clave
+                    </span>
+                    <h3 class="font-anton text-2xl text-slate-900 uppercase mt-3 mb-2">Definición</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Son acontecimientos ambientales y patrios que conmemoran la biodiversidad, geografía e hitos de preservación ecológica en la historia de Venezuela.
+                    </p>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur border-2 border-amber-200/80 rounded-3xl p-6 shadow-lg hover:shadow-xl transition hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center mb-4 shadow-md text-xl">
+                        📚
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">
+                        Clasificación
+                    </span>
+                    <h3 class="font-anton text-2xl text-slate-900 uppercase mt-3 mb-2">Tipos Principales</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2">
+                            <span class="text-amber-500 font-bold">✓</span>
+                            <strong>Símbolos Patrios:</strong> Araguaney, Turpial.
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-amber-500 font-bold">✓</span>
+                            <strong>Áreas Protegidas:</strong> Parques Nacionales.
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-amber-500 font-bold">✓</span>
+                            <strong>Conciencia Mundial:</strong> Día de la Tierra.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur border-2 border-sky-200/80 rounded-3xl p-6 shadow-lg hover:shadow-xl transition hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center mb-4 shadow-md text-xl">
+                        ✨
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest text-sky-700 bg-sky-50 px-2.5 py-1 rounded-md">
+                        Propósito y Atributos
+                    </span>
+                    <h3 class="font-anton text-2xl text-slate-900 uppercase mt-3 mb-2">Características</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2">
+                            <span class="text-sky-500 font-bold">✓</span>
+                            <strong>Sincronía estacional:</strong> Coinciden con ciclos biológicos naturales.
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-sky-500 font-bold">✓</span>
+                            <strong>Resguardo legal:</strong> Sustentadas en decretos oficiales de protección.
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-sky-500 font-bold">✓</span>
+                            <strong>Identidad endémica:</strong> Exaltan la flora, fauna y parques nacionales.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+      
+        <section class="mb-16 relative">
+            
+            <div class="text-center mb-10">
+                <span class="bg-teal-100 text-teal-800 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest inline-block mb-3 border border-teal-300 shadow-sm">
+                    🧠 Esquema Visual Expandido
+                </span>
+                <h2 class="font-anton text-4xl sm:text-6xl text-slate-900 uppercase tracking-wide">
+                    MAPA MENTAL: EVOLUCIÓN Y TIPOS
+                </h2>
+                <p class="text-sm text-slate-600 font-semibold max-w-2xl mx-auto mt-2">
+                    Línea del tiempo e integración conceptual de las efemérides dispuesta en un flujo continuo
+                </p>
+            </div>
+
+            
+            <div class="flex justify-center mb-10">
+                <div class="bg-gradient-to-r from-emerald-700 via-teal-800 to-emerald-900 text-white px-8 py-6 rounded-3xl shadow-2xl border-4 border-emerald-400 text-center max-w-2xl w-full relative z-10 transform hover:scale-105 transition duration-300">
+                    <span class="text-xs font-black uppercase tracking-widest text-emerald-300 bg-emerald-950/60 px-3 py-1 rounded-full">
+                        NODO CENTRAL
+                    </span>
+                    <h3 class="font-anton text-3xl sm:text-4xl uppercase tracking-wider mt-2">
+                        EFEMÉRIDES NATURALES DE VENEZUELA
+                    </h3>
+                    <p class="text-xs sm:text-sm text-emerald-100 mt-1 font-medium">
+                        Identidad, Preservación y Biodiversidad Nacional
+                    </p>
+                </div>
+            </div>
+
+           
+            <div class="flex justify-center -mt-6 mb-8">
+                <div class="w-1.5 h-12 bg-gradient-to-b from-emerald-500 to-teal-600 rounded-full"></div>
+            </div>
+
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+
+               
+                <div class="space-y-6">
+                    <div class="bg-amber-500 text-white p-5 rounded-2xl shadow-lg border-2 border-amber-300 text-center flex items-center justify-center gap-3">
+                        <span class="text-2xl">⏳</span>
+                        <h4 class="font-anton text-2xl uppercase tracking-wider">1. EVOLUCIÓN HISTÓRICA</h4>
+                    </div>
+
+                    <div class="bg-white border-2 border-amber-200 rounded-2xl p-5 shadow-md relative hover:border-amber-400 transition pl-6 border-l-8 border-l-amber-500">
+                        <span class="text-xs font-black text-amber-600 uppercase tracking-widest">Inicio (1937)</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Creación del Primer Parque Nacional</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Nace el Parque Nacional Rancho Grande (hoy Henri Pittier), dando inicio al resguardo legal y características de conservación de la biodiversidad en Venezuela.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-emerald-200 rounded-2xl p-5 shadow-md relative hover:border-emerald-400 transition pl-6 border-l-8 border-l-emerald-500">
+                        <span class="text-xs font-black text-emerald-600 uppercase tracking-widest">Símbolos Patrios (1948 - 1958)</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Decretos de Emblemas Nacionales</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Proclamación del Araguaney como Árbol Nacional (1948) y el Turpial como Ave Nacional (1958) para exaltar las características de la flora y fauna patria.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-sky-200 rounded-2xl p-5 shadow-md relative hover:border-sky-400 transition pl-6 border-l-8 border-l-sky-500">
+                        <span class="text-xs font-black text-sky-600 uppercase tracking-widest">Actualidad</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Conciencia Global y Educación</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Integración en la materia de GHC de fechas con características participativas como el Día de la Tierra y la Conservación de la Biodiversidad.
+                        </p>
+                    </div>
+                </div>
+
+               
+                <div class="space-y-6">
+                    <div class="bg-teal-600 text-white p-5 rounded-2xl shadow-lg border-2 border-teal-300 text-center flex items-center justify-center gap-3">
+                        <span class="text-2xl">🧩</span>
+                        <h4 class="font-anton text-2xl uppercase tracking-wider">2. TIPOS DE EFEMÉRIDES</h4>
+                    </div>
+
+                    <div class="bg-white border-2 border-emerald-200 rounded-2xl p-5 shadow-md relative hover:border-emerald-400 transition pl-6 border-l-8 border-l-emerald-600">
+                        <span class="text-xs font-black text-emerald-700 uppercase tracking-widest">Categoría A</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Símbolos Naturales</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Fechas dedicadas a los íconos biológicos venezolanos cuyas características destacan por su belleza y arraigo nacional: Árbol Nacional (Araguaney), Ave Nacional (Turpial) y Flor Nacional (Orquídea).
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-blue-200 rounded-2xl p-5 shadow-md relative hover:border-blue-400 transition pl-6 border-l-8 border-l-blue-600">
+                        <span class="text-xs font-black text-blue-700 uppercase tracking-widest">Categoría B</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Áreas Naturales Protegidas</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Celebración de la red de Parques Nacionales y Monumentos Naturales que se distinguen por sus características de protección ambiental estricta administrados por INPARQUES.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border-2 border-purple-200 rounded-2xl p-5 shadow-md relative hover:border-purple-400 transition pl-6 border-l-8 border-l-purple-600">
+                        <span class="text-xs font-black text-purple-700 uppercase tracking-widest">Categoría C</span>
+                        <h5 class="font-bold text-slate-800 text-base mt-1">Ecología y Planeta</h5>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Jornadas internacionales de carácter educativo y preventivo: Día del Agua, Día de la Tierra, Reciclaje y Preservación del Planeta.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+       
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="font-anton text-4xl sm:text-6xl text-slate-900 uppercase tracking-wide">
+                    TARJETAS DE EFEMÉRIDES DESTACADAS
+                </h2>
+                <p class="text-sm text-slate-500 font-semibold">
+                    Haz clic en cada sección para desplegar más información
+                </p>
+            </div>
+
+            <div class="space-y-6 max-w-6xl mx-auto">
+
+              
+                <div class="bg-[#ea580c] text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden transition hover:scale-[1.01]">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-5 space-y-3">
+                            <span class="inline-block bg-amber-200 text-orange-950 font-black text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                                🗓️ Último Domingo de Mayo
+                            </span>
+                            <h3 class="font-anton text-3xl sm:text-5xl uppercase tracking-wide leading-none">
+                                Día del Árbol Nacional
+                            </h3>
+                            <p class="text-orange-100 text-sm font-medium leading-relaxed">
+                                Homenaje al Araguaney (Handroanthus chrysanthus), decretado en 1948 por el presidente Rómulo Gallegos.
+                            </p>
+                        </div>
+                        <div class="md:col-span-7 space-y-3">
+                            <div class="border-b border-orange-400/60 pb-3 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Declaración Oficial y Características (1948)</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-orange-100 pt-2">
+                                    Decretado Árbol Nacional el 29 de mayo de 1948. Entre sus características destaca su floración amarilla masiva y su resistencia a la sequía.
+                                </div>
+                            </div>
+                            <div class="border-b border-orange-400/60 pb-3 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Importancia Ecológica</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-orange-100 pt-2">
+                                    Favorece la reforestación y alimenta a múltiples polinizadores durante la floración primaveral.
+                                </div>
+                            </div>
+                            <div class="pb-1 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Simbolismo Patrio</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-orange-100 pt-2">
+                                    Representa la fuerza, fertilidad y resplandor amarillo de los campos venezolanos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="bg-[#059669] text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden transition hover:scale-[1.01]">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-5 space-y-3">
+                            <span class="inline-block bg-emerald-200 text-emerald-950 font-black text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                                🗓️ 23 de Mayo
+                            </span>
+                            <h3 class="font-anton text-3xl sm:text-5xl uppercase tracking-wide leading-none">
+                                Declaración del Turpial
+                            </h3>
+                            <p class="text-emerald-100 text-sm font-medium leading-relaxed">
+                                Proclamación del Icterus icterus como Ave Nacional de Venezuela por su hermoso canto y colores vivaces.
+                            </p>
+                        </div>
+                        <div class="md:col-span-7 space-y-3">
+                            <div class="border-b border-emerald-400/60 pb-3 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Decreto Nacional y Rasgos (1958)</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-emerald-100 pt-2">
+                                    Declarado Ave Nacional tras un certamen en 1958. Se caracteriza por su plumaje negro y amarillo brillante y su canto melodioso.
+                                </div>
+                            </div>
+                            <div class="border-b border-emerald-400/60 pb-3 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Hábitat y Distribución</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-emerald-100 pt-2">
+                                    Habita en los llanos, bosques secos y matorrales cálidos de la geografía nacional.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bg-[#0284c7] text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden transition hover:scale-[1.01]">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-5 space-y-3">
+                            <span class="inline-block bg-sky-200 text-sky-950 font-black text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                                🗓️ 13 de Febrero
+                            </span>
+                            <h3 class="font-anton text-3xl sm:text-5xl uppercase tracking-wide leading-none">
+                                Parques Nacionales
+                            </h3>
+                            <p class="text-sky-100 text-sm font-medium leading-relaxed">
+                                Celebración de las 44 áreas protegidas iniciadas con el Parque Nacional Henri Pittier en 1937.
+                            </p>
+                        </div>
+                        <div class="md:col-span-7 space-y-3">
+                            <div class="border-b border-sky-400/60 pb-3 cursor-pointer accordion-item" onclick="toggleAccordion(this)">
+                                <div class="flex items-center justify-between font-bold text-base">
+                                    <span>Características de Protección (Henri Pittier)</span>
+                                    <span class="text-xl toggle-icon">+</span>
+                                </div>
+                                <div class="accordion-content text-xs sm:text-sm text-sky-100 pt-2">
+                                    Resguarda una altísima variedad de plantas, aves y hábitats biológicos bajo un régimen de protección legal estricto.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <span class="bg-purple-100 text-purple-800 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest inline-block mb-3 border border-purple-300 shadow-sm">
+                    🎨 Expresión Cultural
+                </span>
+                <h2 class="font-anton text-4xl sm:text-6xl text-slate-900 uppercase tracking-wide">
+                    ARTE Y PATRIMONIO NATURAL
+                </h2>
+                <p class="text-sm text-slate-600 font-semibold max-w-2xl mx-auto mt-2">
+                    Representaciones artísticas, fotográficas y culturales que exaltan la riqueza ambiental venezolana
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                
+                <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-48 bg-emerald-700 overflow-hidden flex items-center justify-center">
+                        <img src="1.png" alt="Araguaney en flor" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0 z-10" onerror="this.classList.add('hidden')">
+                        <span class="text-white font-anton text-xl z-0">ARAGUANEY</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-anton text-xl text-slate-900 uppercase">El Araguaney Dorado</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Fotografía del árbol nacional destacando las características de su floración amarilla primaveral.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-48 bg-amber-500 overflow-hidden flex items-center justify-center">
+                        <img src="2.png" alt="Turpial Venezolano" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0 z-10" onerror="this.classList.add('hidden')">
+                        <span class="text-white font-anton text-xl z-0">TURPIAL</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-anton text-xl text-slate-900 uppercase">El Turpial Venezolano</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            El Turpial (Icterus icterus) y sus características cromáticas de plumaje brillante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-48 bg-sky-600 overflow-hidden flex items-center justify-center">
+                        <img src="3.png" alt="Parque Nacional El Ávila" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0 z-10" onerror="this.classList.add('hidden')">
+                        <span class="text-white font-anton text-xl z-0">EL ÁVILA</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-anton text-xl text-slate-900 uppercase">El Ávila de Caracas</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            El majestuoso Parque Nacional El Ávila, pulmón vegetal protegido por su riqueza ecológica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl border-2 border-slate-200 overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-48 bg-purple-600 overflow-hidden flex items-center justify-center">
+                        <img src="4.png" alt="Orquídea Flor Nacional" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0 z-10" onerror="this.classList.add('hidden')">
+                        <span class="text-white font-anton text-xl z-0">ORQUÍDEA</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-anton text-xl text-slate-900 uppercase">La Flor de Mayo</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            La Orquídea (Cattleya mossiae) representada como emblema botánico por sus finas características estéticas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+        <section class="mb-12 mt-16 text-center max-w-3xl mx-auto space-y-6">
+            <h2 class="font-anton text-4xl sm:text-6xl text-emerald-950 uppercase tracking-wide">
+                ¡GRACIAS POR PRESTAR ATENCIÓN!
+            </h2>
+
+            <div class="flex items-center justify-center my-6">
+                <div class="relative w-full max-w-lg min-h-[220px] sm:min-h-[300px] flex items-center justify-center">
+                    <img src="3.gif" alt="Animación de agradecimiento" class="max-w-md w-full h-auto object-contain rounded-2xl relative z-10 shadow-lg" onerror="this.classList.add('hidden')">
+                    <span class="z-0 absolute font-anton text-4xl text-emerald-800">¡GRACIAS!</span>
+                </div>
+            </div>
+
+            <p class="text-base sm:text-xl text-slate-700 font-semibold leading-relaxed max-w-xl mx-auto">
+                Esperamos que esta presentación haya sido de su agrado. ¡Muchas gracias a todos por su tiempo y atención!
+            </p>
+        </section>
+
+    </main>
+
+    
+    <footer class="w-full text-center text-slate-500 text-sm border-t border-slate-300 py-6 bg-white/50 backdrop-blur-sm mt-auto">
+        <p class="font-bold text-slate-800 text-base">GHC Evaluación N° 1 • 4to Año "B"</p>
+        <p class="mt-1">Luizabeth Contreras • Marlon Cassiani • Jean Carlos • Manuel Cano</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
